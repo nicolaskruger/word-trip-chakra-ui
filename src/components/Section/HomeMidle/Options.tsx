@@ -54,7 +54,8 @@ export const Options: FC = () => {
             spacing={"7"}
         >
             {cardList.reduce((acc, curr, index) => {
-                acc[index % 3][index % 2] = curr;
+                const val = Math.trunc(index / 2);
+                acc[val][index % 2] = curr;
                 return acc;
             }, "_".repeat(3).split("").map(_ => [{}, null] as Card[]))
                 .map((card, index) => (

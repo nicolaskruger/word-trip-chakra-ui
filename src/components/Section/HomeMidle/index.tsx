@@ -1,6 +1,7 @@
 import { Box, Stack } from "@chakra-ui/react";
 import { FC } from "react";
 import { Options } from "./Options";
+import { SeparetedLine } from "./SeparatedLine";
 
 
 export const SectionMidle: FC = () => {
@@ -13,6 +14,7 @@ export const SectionMidle: FC = () => {
         >
             <Stack>
                 <Options />
+                <SeparetedLine />
             </Stack>
         </Box>
     )
