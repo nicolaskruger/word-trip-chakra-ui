@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { Header } from '../components/Header'
 import { IsMobileProvider } from '../contexts/IsMobileContext'
 import { theme } from '../styles/theme'
+import "../styles/global.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
 

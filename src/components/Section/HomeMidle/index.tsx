@@ -15,16 +15,18 @@ export const SectionMidle: FC = () => {
             <Stack>
                 <Options />
                 <SeparetedLine />
-                <Text
-                    textAlign={"center"}
-                    color={"dark.700"}
-                    fontSize={["1.25rem", "2.25rem"]}
-                    fontWeight={"medium"}
-                    mb={["5", "12"]}
-                >
-                    Vamos nessa?<br />
-                    Então escolha seu continente
-                </Text>
+                <Box>
+                    <Text
+                        textAlign={"center"}
+                        color={"dark.700"}
+                        fontSize={["1.25rem", "2.25rem"]}
+                        fontWeight={"medium"}
+                        mb={["5", "12"]}
+                    >
+                        Vamos nessa?<br />
+                        Então escolha seu continente
+                    </Text>
+                </Box>
             </Stack>
         </Box >
     )
