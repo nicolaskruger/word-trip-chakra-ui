@@ -1,11 +1,12 @@
 import { Box, Flex, Img, Stack, Text } from "@chakra-ui/react";
 import { FC } from "react";
+import { useIsMobileContext } from "../../../contexts/IsMobileContext";
 
-type SectionTopProps = {
-    isMobile: boolean,
-}
 
-export const SectionTop: FC<SectionTopProps> = ({ isMobile }) => {
+export const SectionTop: FC = () => {
+
+    const isMobile = useIsMobileContext();
+
     return (
         <Box
             as="section"
