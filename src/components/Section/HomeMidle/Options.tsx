@@ -1,4 +1,4 @@
-import { Box, Flex, SimpleGrid, } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid, Stack, } from "@chakra-ui/react";
 import { FC } from "react";
 import { useIsMobileContext } from "../../../contexts/IsMobileContext";
 import { OptionCard } from "./OptionCard";
@@ -49,17 +49,24 @@ export const Options: FC = () => {
             </Flex >
         )
     return (
-        <SimpleGrid
-            alignSelf={"center"}
-            columns={2}
-            spacing={10}
-            spacingX={100}
+        <Stack
+            px={"4"}
+            spacing={"7"}
         >
-            {
-                cardList.map(card => (
-                    <OptionCard card={card} key={card.title} />
+            {cardList.reduce((acc, curr, index) => {
+                acc[index % 3][index % 2] = curr;
+                return acc;
+            }, "_".repeat(3).split("").map(_ => [{}, null] as Card[]))
+                .map((card, index) => (
+                    <Flex
+                        key={index}
+                        justify={card[1] == null ? "center" : "space-between"}
+                    >
+                        <OptionCard card={card[0]} />
+                        {card[1] && <OptionCard card={card[1]} />}
+                    </Flex>
                 ))
             }
-        </SimpleGrid>
+        </Stack>
     )
 }
