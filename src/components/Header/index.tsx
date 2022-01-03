@@ -10,7 +10,7 @@ export const Header: FC = () => {
     return (
         <Box
             py={"6"}
-            px={"2"}
+            px={"5"}
             mx={"auto"}
             maxW={"1480px"}
         >

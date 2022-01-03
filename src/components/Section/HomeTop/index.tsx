@@ -1,7 +1,11 @@
 import { Box, Flex, Img, Stack, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
-export const SectionTop: FC = () => {
+type SectionTopProps = {
+    isMobile: boolean,
+}
+
+export const SectionTop: FC<SectionTopProps> = ({ isMobile }) => {
     return (
         <Box
             as="section"
@@ -14,7 +18,8 @@ export const SectionTop: FC = () => {
                 maxW={"1480px"}
                 justifyContent={"space-between"}
                 align={"center"}
-                px={"2"}
+                px={"5"}
+                py={isMobile ? "10" : "0"}
             >
                 <Stack
                     spacing={"5"}
@@ -37,13 +42,13 @@ export const SectionTop: FC = () => {
                         Chegou a hora de tirar do papel a viagem que você sempre sonhou.
                     </Text>
                 </Stack>
-                <Img
+                {!isMobile && <Img
                     src="/Airplane.svg"
                     width={417}
                     position={"relative"}
                     top={10}
                     transform={"rotate(3deg)"}
-                />
+                />}
             </Flex>
         </Box >
     )
