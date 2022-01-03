@@ -8,7 +8,7 @@ export const IsMobileProvider: FC = ({ children }) => {
     const isMobile = useBreakpointValue({
         base: true,
         lg: false
-    }) || true;
+    }) || false;
 
     return <IsMobileContext.Provider value={isMobile}>
         {children}

@@ -29,7 +29,7 @@ export const SectionTop: FC = () => {
                     <Text
                         as="h1"
                         fontWeight={"medium"}
-                        fontSize={"2.25rem"}
+                        fontSize={["1.25rem", "2.25rem"]}
                         color={"light.200"}
                     >
                         5 Continentes,<br />
@@ -37,7 +37,7 @@ export const SectionTop: FC = () => {
                     </Text>
                     <Text
                         fontWeight={"normal"}
-                        fontSize={"1.25rem"}
+                        fontSize={["0.875rem", "1.25rem"]}
                         color={"light.300"}
                     >
                         Chegou a hora de tirar do papel a viagem que você sempre sonhou.
