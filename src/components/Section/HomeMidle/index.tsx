@@ -1,4 +1,4 @@
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 import { FC } from "react";
 import { Options } from "./Options";
 import { SeparetedLine } from "./SeparatedLine";
@@ -15,7 +15,17 @@ export const SectionMidle: FC = () => {
             <Stack>
                 <Options />
                 <SeparetedLine />
+                <Text
+                    textAlign={"center"}
+                    color={"dark.700"}
+                    fontSize={["1.25rem", "2.25rem"]}
+                    fontWeight={"medium"}
+                    mb={["5", "12"]}
+                >
+                    Vamos nessa?<br />
+                    Então escolha seu continente
+                </Text>
             </Stack>
-        </Box>
+        </Box >
     )
 }
