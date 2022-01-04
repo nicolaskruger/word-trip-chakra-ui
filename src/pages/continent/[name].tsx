@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import { SectionMiddle } from "../../components/Section/ContinentMiddle";
 import { SectionTop } from "../../components/Section/ContinentTop";
 import { continetApi } from "../../services/continetApi";
 
@@ -22,13 +23,25 @@ type Result = {
     continet: Continent
 }
 
-const ContinetPage: NextPage<Result> = ({ continet: { title, banner } }) => {
+const ContinetPage: NextPage<Result> = ({ continet: {
+    title,
+    text,
+    banner,
+    numCounty,
+    numLanguages,
+    numCitys
+} }) => {
     return (
         <Flex
             direction={"column"}
             as="main"
         >
             <SectionTop title={title} banner={banner} />
+            <SectionMiddle
+                text={text}
+                numCountry={numCounty}
+                numCities={numCitys}
+                numLanguages={numLanguages} />
         </Flex>
     )
 }
