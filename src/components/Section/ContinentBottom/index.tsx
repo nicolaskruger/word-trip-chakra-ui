@@ -45,7 +45,7 @@ export const SectionBottom: FC<SectionBottomProps> = ({ citiys }) => {
                 (
                     <Flex
                         justifyContent={"center"}
-                        marginTop={"20px"}
+                        my={"20px"}
                     >
                         <Stack
                             spacing={"20px"}
@@ -56,9 +56,10 @@ export const SectionBottom: FC<SectionBottomProps> = ({ citiys }) => {
                     </Flex>
                 ) :
                 <SimpleGrid
-                    marginTop={"40px"}
+                    my={"40px"}
                     minChildWidth={"300px"}
                     gap={"48px"}
+
                 >
                     {citiys.map((city, index) => (
                         <Card key={index} city={city} />
