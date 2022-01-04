@@ -43,9 +43,9 @@ export const SectionMiddle: FC<SectionMiddleProps> = ({
         <SimpleGrid
             mt={["3", "20"]}
             mb={["4", "20"]}
-            minChildWidth={["100%", "100%", "47.5%"]}
-            px={"5"}
+            minChildWidth={["100%", "100%", "100%", "47.5%"]}
             column={2}
+            px={"5"}
             mx={"auto"}
             maxW={"1480px"}
             gap={"5%"}

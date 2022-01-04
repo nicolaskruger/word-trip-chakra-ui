@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import { SectionBottom } from "../../components/Section/ContinentBottom";
 import { SectionMiddle } from "../../components/Section/ContinentMiddle";
 import { SectionTop } from "../../components/Section/ContinentTop";
 import { continetApi } from "../../services/continetApi";
@@ -29,7 +30,8 @@ const ContinetPage: NextPage<Result> = ({ continet: {
     banner,
     numCounty,
     numLanguages,
-    numCitys
+    numCitys,
+    citiys
 } }) => {
     return (
         <Flex
@@ -42,6 +44,7 @@ const ContinetPage: NextPage<Result> = ({ continet: {
                 numCountry={numCounty}
                 numCities={numCitys}
                 numLanguages={numLanguages} />
+            <SectionBottom citiys={citiys} />
         </Flex>
     )
 }

@@ -24,31 +24,31 @@ export default function handler(
                 name: "Londres",
                 country: "Reino Unido",
                 flag: "/flag/united-kindon.jpg",
-                banner: "/country/london.jpg"
+                banner: "/city/london.jpg"
             },
             {
                 name: "Paris",
                 country: "França",
                 flag: "/flag/france.jpg",
-                banner: "/country/paris.jpg"
+                banner: "/city/paris.jpg"
             },
             {
                 name: "Roma",
                 country: "Itália",
                 flag: "/flag/italy.jpg",
-                banner: "/country/roma.jpg"
+                banner: "/city/roma.jpg"
             },
             {
                 name: "Praga",
                 country: "República Tcheca",
                 flag: "/flag/tcheca.jpg",
-                banner: "/country/praga.jpg"
+                banner: "/city/praga.jpg"
             },
             {
                 name: "Amsterdã",
                 country: "Holanda",
                 flag: "/flag/holand.jpg",
-                banner: "/country/amsterda.jpg"
+                banner: "/city/amsterdan.jpg"
             },
         ]
     })
