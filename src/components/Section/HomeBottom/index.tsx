@@ -20,37 +20,37 @@ const slidList: SlideType[] = [
         src: "/slide/europe.jpg",
         title: "Europa",
         subTitle: "O continente mais antigo",
-        href: "/country/europe"
+        href: "/continent/europe"
     },
     {
         src: "/slide/north-america.jpg",
         title: "America do Norte",
         subTitle: "O continente mais rico",
-        href: "/country/north-america"
+        href: "/continent/north-america"
     },
     {
         src: "/slide/south-america.jpg",
         title: "America do sul",
         subTitle: "O continente mais festeiro",
-        href: "/country/south-america",
+        href: "/continent/south-america",
     },
     {
         src: "/slide/asia.jpg",
         title: "Asia",
         subTitle: "O continente mais tecnologico",
-        href: "/country/asia"
+        href: "/continent/asia"
     },
     {
         src: "/slide/africa.jpg",
         title: "Africa",
         subTitle: "O continente mais bonito",
-        href: "/country/africa"
+        href: "/continent/africa"
     },
     {
         src: "/slide/australia.jpg",
         title: "Australia",
         subTitle: "O continente mais canguru",
-        href: "/country/australia"
+        href: "/continent/australia"
     },
 ]
 
