@@ -1,4 +1,4 @@
-import { HStack, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
+import { Flex, HStack, SimpleGrid, Text, Tooltip } from "@chakra-ui/react";
 import { FC } from "react";
 import { Card } from "./card";
 
@@ -41,18 +41,30 @@ export const SectionMiddle: FC<SectionMiddleProps> = ({
     ]
     return (
         <SimpleGrid
-            mt={"20"}
-            minChildWidth={"50%"}
+            mt={["3", "20"]}
+            mb={["4", "20"]}
+            minChildWidth={["100%", "100%", "47.5%"]}
+            px={"5"}
             column={2}
+            mx={"auto"}
+            maxW={"1480px"}
+            gap={"5%"}
         >
-            <Text>
+            <Text
+                textAlign={"justify"}
+                fontSize={["0.875rem", "1.5rem"]}
+                color={"dark.700"}
+            >
                 {text}
             </Text>
-            <HStack>
+            <Flex
+                justifyContent={"space-between"}
+                align={["center"]}
+            >
                 {cardList.map((card, index) => (
                     <Card key={index} {...card} />
                 ))}
-            </HStack>
+            </Flex>
         </SimpleGrid>
     )
 }
